@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:id="@+id/routeRelative">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/routeTxt"
+        android:maxLines="1"
+        android:text="@string/na"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="15sp"/>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/vesselRelative"
+        android:layout_below="@+id/routeRelative">
+
+        <TextView
+            android:id="@+id/vessellst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/na"
+            android:textSize="20sp"
+            android:maxLines="1"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/departRelative"
+        android:layout_below="@+id/routeRelative"
+        android:layout_toRightOf="@+id/vesselRelative"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/departure"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
+            android:text="@string/na"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            android:maxLines="1"/>
+        </RelativeLayout>
+
+
+</RelativeLayout>

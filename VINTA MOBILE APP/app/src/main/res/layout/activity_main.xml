@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!---<android.support.v4.widget.DrawerLayout-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_ground"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.ActivityMain"
+    android:id="@+id/drawerLayout">
+
+<RelativeLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/flcontent">
+
+    <LinearLayout
+        android:id="@+id/VesselLinear"
+        android:layout_alignParentTop="true"
+        android:baselineAligned="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/map_bg"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <RelativeLayout
+            android:id="@+id/VesselDetails1Relative"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/VesselNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:text="Vessel ID :"
+                android:textColor="@color/textColor"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/VesselNoVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="13dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/textColor"
+                android:layout_toEndOf="@+id/VesselNo"
+                android:layout_toRightOf="@+id/VesselNo"
+                android:maxLines="1"
+                android:text="@string/na" />
+
+            <TextView
+                android:id="@+id/stationOrig"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/VesselNo"
+                android:text="@string/station_origin"
+                android:textColor="@color/textColor"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/StationOrigVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/stationOrig"
+                android:textColor="@color/textColor"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:text="@string/na" />
+
+            <TextView
+                android:id="@+id/ETA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/StationOrigVal"
+                android:layout_marginTop="22dp"
+                android:maxLines="1"
+                android:text="@string/eta"
+                android:textColor="@color/textColor"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ETAVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/StationOrigVal"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginStart="3dp"
+                android:textColor="@color/textColor"
+                android:layout_toEndOf="@+id/ETA"
+                android:layout_toRightOf="@+id/ETA"
+                android:maxLines="1"
+                android:text= "@string/na"/>
+            <TextView
+                android:id="@+id/Duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Duration:"
+                android:textStyle="bold"
+                android:textColor="@color/textColor"
+                android:layout_below="@+id/ETA"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:id="@+id/DurationVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/na"
+                android:maxLines="1"
+                android:layout_below="@+id/ETA"
+                android:layout_toRightOf="@+id/Duration"
+                android:layout_toEndOf="@+id/Duration"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="3dp"
+                android:textColor="@color/textColor"
+                android:layout_marginStart="3dp"/>
+         </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/VesselDetails2Relative"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+             <TextView
+                android:id="@+id/blank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                 android:textColor="@color/textColor"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                 android:text="" />
+
+            <TextView
+                android:id="@+id/StationDest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/blank"
+                android:text="@string/station_dest"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/textColor"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/StationDestVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/StationDest"
+                android:maxLines="1"
+                android:textColor="@color/textColor"
+                android:text="@string/na" />
+            <TextView
+                android:id="@+id/txtSpeed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:text="Speed:"
+                android:textStyle="bold"
+                android:textColor="@color/textColor"
+                android:textSize="15sp"
+                android:layout_below="@+id/StationDestVal"
+                android:layout_marginTop="22dp"/>
+            <TextView
+                android:id="@+id/txtSpeedVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:text="@string/na"
+                android:maxLines="1"
+                android:layout_below="@+id/StationDestVal"
+                android:layout_toRightOf="@+id/txtSpeed"
+                android:layout_toEndOf="@+id/txtSpeed"
+                android:layout_marginTop="22dp"
+                android:layout_marginLeft="50dp"
+                android:textColor="@color/textColor"
+                android:layout_marginStart="50dp"/>
+            <TextView
+                android:id="@+id/txtDistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Distance:"
+                android:textStyle="bold"
+                android:textColor="@color/textColor"
+                android:textSize="15sp"
+                android:layout_below="@+id/txtSpeed"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:id="@+id/txtDistanceVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/na"
+                android:layout_below="@+id/txtSpeed"
+                android:textColor="@color/textColor"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginStart="70dp"/>
+            <TextView
+                android:id="@+id/paymentID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColor"
+                android:text="@string/na"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/MapRelative"
+        android:layout_below="@+id/VesselLinear"
+        android:background="@drawable/map_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <fragment
+            xmlns:map="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.MapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+</RelativeLayout>
+
+    <!---<android.support.design.widget.NavigationView
+    android:id="@+id/nav"
+    app:headerLayout="@layout/header"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    app:menu="@menu/navigation_menu"
+    android:layout_gravity="start">
+
+</android.support.design.widget.NavigationView>
+!-->
+
+</LinearLayout>
+    <!---</android.support.v4.widget.DrawerLayout>!-->

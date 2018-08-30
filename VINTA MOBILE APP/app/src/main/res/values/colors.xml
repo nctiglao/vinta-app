@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#009688</color>
+    <color name="colorPrimaryDark">#00796B</color>
+    <color name="colorAccent">#009688</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimaryLight">#B2DFDB</color>
+    <color name="colorPrimaryText">#212121</color>
+    <color name="colorSecondaryText">#757575</color>
+    <color name="colorDivider">#BDBDBD</color>
+
+
+    <color name="black">#000000</color>
+    <color name="black_87">#212121</color>
+    <color name="black_54">#737373</color>
+
+    <color name="emerald">#2ecc71</color>
+    <color name="alizarin">#e74c3c</color>
+
+    <color name="green_900">#1b5e20</color>
+
+    <color name="red_900">#b71c1c</color>Z
+
+    <color name="grey">#c3c3c3</color>
+
+
+    <color name="back_ground">#1686CC</color>
+    <color name="boat">#b9d8f8</color>
+    <color name="textColor">#edeff2</color>
+
+</resources>

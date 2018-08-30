@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">VINTA</string>
+    <string name="title_activity_main">VINTA Mobile App</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="my_location">My Location:</string>
+    <string name="Latitude">Latitude:</string>
+    <string name="na">na</string>
+    <string name="longitude">Longitude:</string>
+    <string name="my_destination">My Destination:</string>
+    <string name="station_origin">Station Origin:</string>
+    <string name="station_dest">Station Destination:</string>
+    <string name="eta">ETA:</string>
+    <string name="choosedate">Choose date</string>
+
+    <string name="mobile_hint">Mobile Number</string>
+    <string name="name">Your Name</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="show_pass">Show Password</string>
+
+    <string name="action_leave">Leave</string>
+    <string name="action_send">Send</string>
+    <string name="prompt_message">Message</string>
+
+    <string name="connect">Connected</string>
+    <string name="disconnect">Disconnected, Please check your internet connection</string>
+    <string name="error_connect">Failed to connect</string>
+    <string name="creatbtn">Create</string>
+
+    <!-- messages -->
+    <string name="message_welcome">Welcome to Socket.IO Chat –</string>
+    <plurals name="message_participants">
+        <item quantity="one">there\'s %d participant</item>
+        <item quantity="other">there are %d participants</item>
+    </plurals>
+    <string name="message_user_joined">%s joined</string>
+    <string name="message_user_left">%s left</string>
+    <string name="user_action_typing">is typing</string>
+    <string name="action_create_account">Create Account</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_login">Login</string>
+    <string name="action_exit">Exit</string>
+
+    <string name="scan_result">Scan your payment ticket. </string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nav_vesseleta">Vessel</string>
+    <string name="nav_account">Account</string>
+
+    <string name="nav_home">Home</string>
+    <string name="nav_feedback">Feedback</string>
+    <string name="nav_about">About</string>
+
+    <string name="appname">Cavite Super Ferry</string>
+    <string name="develop">Developed by:</string>
+    <string name="stride">STRIDE Consulting Inc.</string>
+    <string name="version">v 1.0.0</string>
+    <string name="feedback">Any feedback about the app?</string>
+    <string name="feedbox">Input feedback</string>
+    <string name="timeschedule">Time Schedule:</string>
+    <string name="vesselString">Vessel No:</string>
+    <string name="confirm">Confirm</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="login">login</string>
+
+</resources>

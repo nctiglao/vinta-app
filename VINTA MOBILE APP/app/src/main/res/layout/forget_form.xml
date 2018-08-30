@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_ground"
+    android:id="@+id/linearContent">
+
+    <TextView
+        android:id="@+id/texttxt"
+        android:textColor="@color/textColor"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginStart="100dp"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password"
+        android:textSize="24sp"/>
+
+
+    <TextView
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColor"
+        android:text="Enter username"
+        android:textSize="20sp"
+        android:layout_marginTop="40dp"/>
+    <EditText
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/textColor"
+        android:layout_marginEnd="20dp"
+        android:id="@+id/usernamedit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/btnconfirm2"
+        android:layout_marginStart="150dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/confirm"
+        android:background="@drawable/button_bg_layout"
+        android:textColor="@color/textColor"/>
+
+</LinearLayout>

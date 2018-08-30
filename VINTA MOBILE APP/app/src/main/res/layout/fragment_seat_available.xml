@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_ground"
+    android:id="@+id/container_seats"
+    tools:context="com.example.jim.superferry.Fragment.SeatAvailable">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:id="@+id/stationSpinnerRelative">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Station Origin"
+        android:textColor="#edeff2"
+        android:textSize="20sp"
+        android:layout_marginTop="40dp"/>
+        <RelativeLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/spinner_design"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:id="@+id/relativeLayout">
+            <Spinner
+                android:id="@+id/stationOrigSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/black_54"
+                android:textSize="24sp"
+                android:gravity="center"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#edeff2"
+        android:text="Station Destination"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:layout_marginTop="53dp" />
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/spinner_design"
+        android:layout_gravity="center"
+        android:padding="10dp">
+
+        <Spinner
+            android:id="@+id/stationDestSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/black_54"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+        </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stationSpinnerRelative"
+        android:layout_marginTop="95dp"
+        android:layout_centerInParent="true">
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnSeat"
+            android:text="View"
+            android:clickable="true"
+            android:background="@drawable/button_bg_layout"
+            android:textColor="#edeff2"/>
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

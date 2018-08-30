@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:focusable="true">
+
+        <TextView
+            android:id="@+id/vesselCardView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="Id:"/>
+        <TextView
+            android:id="@+id/vesselCardViewVal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_toEndOf="@+id/vesselCardView"
+            android:layout_toRightOf="@+id/vesselCardView"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="@string/station_origin"
+            android:id="@+id/stationOrigCardView"
+            android:layout_below="@+id/vesselCardView"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/stationOrigCardViewVal"
+            android:layout_width="wrap_content"
+            android:textSize="15sp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_toRightOf="@+id/stationOrigCardView"
+            android:layout_toEndOf="@+id/stationOrigCardView"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/vesselCardView"/>
+
+        <TextView
+            android:id="@+id/stationDestCardView"
+            android:layout_width="wrap_content"
+            android:textSize="15sp"
+            android:layout_height="wrap_content"
+            android:text="@string/station_dest"
+            android:layout_below="@+id/stationOrigCardView"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:id="@+id/stationDestCardViewVal"
+            android:layout_width="wrap_content"
+            android:textSize="15sp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_below="@+id/stationOrigCardViewVal"
+            android:layout_toRightOf="@+id/stationDestCardView"
+            android:layout_toEndOf="@+id/stationDestCardView"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp" />
+
+        <TextView
+            android:id="@+id/timeSchedCardView"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date:"
+            android:layout_below="@+id/stationDestCardView"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/timeSchedCardViewVal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="15sp"
+            android:layout_toRightOf="@+id/timeSchedCardView"
+            android:layout_toEndOf="@+id/timeSchedCardView"
+            android:layout_below="@+id/stationDestCardView"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

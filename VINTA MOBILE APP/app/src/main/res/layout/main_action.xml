@@ -1,0 +1,78 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/content_mainAction"
+    android:background="@color/back_ground"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.ActionMain">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relLayout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/relLayoutTop">
+            <android.support.design.widget.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.design.widget.TabLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:tabTextAppearance="@style/MyCustomTabText"
+                    android:id="@+id/tabs"
+                    android:background="@drawable/grey_dark_top">
+
+                </android.support.design.widget.TabLayout>
+
+            </android.support.design.widget.AppBarLayout>
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/container_Relative"
+            android:background="@color/back_ground"
+            android:layout_marginTop="5dp"
+            android:layout_above="@+id/relLayoutBot"
+            android:layout_below="@+id/relLayoutTop">
+
+            <android.support.v4.view.ViewPager
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/container">
+
+            </android.support.v4.view.ViewPager>
+
+            
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/relLayoutBot">
+            
+            <android.support.design.widget.BottomNavigationView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/navView_bar"
+                android:background="@drawable/white_grey_border_bottom"
+                app:menu="@menu/bottom_navigation">
+
+            </android.support.design.widget.BottomNavigationView>
+            
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>

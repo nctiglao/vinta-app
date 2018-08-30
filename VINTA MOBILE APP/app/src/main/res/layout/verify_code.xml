@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_ground"
+    android:id="@+id/linearContent">
+
+    <TextView
+        android:layout_marginLeft="100dp"
+        android:layout_marginStart="100dp"
+        android:textColor="@color/textColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change password"
+        android:textSize="24sp"/>
+
+
+    <TextView
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/textColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Username::"
+        android:layout_marginTop="40dp"
+        android:textSize="20sp"/>
+    <EditText
+        android:layout_marginStart="20dp"
+        android:background="@color/textColor"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:id="@+id/UsernameEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:hint="Username"
+        android:textSize="18sp" />
+
+
+    <TextView
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/textColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter code:"
+        android:layout_marginTop="40dp"
+        android:textSize="20sp"/>
+    <EditText
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/textColor"
+        android:layout_marginEnd="20dp"
+        android:id="@+id/codeEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:hint="Verify code"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/textColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your new password"
+        android:layout_marginTop="40dp"
+        android:textSize="20sp"/>
+    <EditText
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/textColor"
+        android:id="@+id/newpass1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/textColor"
+        android:hint="New password"
+        android:textSize="18sp"
+        android:inputType="textPassword"/>
+    <TextView
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:textColor="@color/textColor"
+        android:layout_height="wrap_content"
+        android:text="Re-enter new password"
+        android:textSize="20sp"
+        android:layout_marginTop="40dp"/>
+    <EditText
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:id="@+id/renewpass1"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:background="@color/textColor"
+        android:layout_height="wrap_content"
+        android:hint="Re-enter new password"
+        android:textSize="18sp"/>
+
+
+
+    <Button
+
+        android:id="@+id/btnconfirm_ver"
+        android:layout_marginStart="140dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:text="Confirm"
+        android:background="@drawable/button_bg_layout"
+        android:textColor="@color/textColor"/>
+
+</LinearLayout>

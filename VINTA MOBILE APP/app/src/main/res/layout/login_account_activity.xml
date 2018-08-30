@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_ground"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    android:id="@+id/linearCon">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearContent"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+
+            <RelativeLayout
+                android:id="@+id/relative_load_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true">
+                <ImageView
+                    android:id="@+id/img_app_logo"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/logo"
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="@string/app_name"/>
+
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/text_app_name1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VESSEL INTERACTIVE APP"
+                android:textAllCaps="true"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#edeff2"
+                android:gravity="center"
+                android:layout_marginTop="100dp"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email Adress"
+            android:textSize="18sp"
+            android:textColor="@color/textColor"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"/>
+
+        <EditText
+            android:id="@+id/edit_text_login_username"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="example@example.com"
+            android:textColorHint="#aeaeae"
+            android:textCursorDrawable="@null"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:inputType="textFilter"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="normal"
+            android:background="@color/textColor"
+            android:textSize="22sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Passenger ID"
+            android:textSize="18sp"
+            android:textColor="@color/textColor"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/edit_text_login_password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="•••••••••"
+            android:textColorHint="#aeaeae"
+            android:background="#edeff2"
+            android:textCursorDrawable="@null"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="normal"
+            android:textSize="22sp" />
+        <LinearLayout
+            android:layout_marginTop="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <CheckBox
+                android:id="@+id/cbShwPwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Show Passenger ID"
+                android:textColor="#edeff2"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/txtFrgtPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/forgot_password"
+            android:textSize="20sp"
+            android:textColor="#edeff2"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"/>
+
+        <Button
+            android:id="@+id/btn_Login"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:background="@drawable/button_bg_layout"
+            android:textColor="#edeff2"
+            android:textSize="15sp"
+            android:clickable="true"
+            android:enabled="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:text="@string/login"/>
+
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:layout_gravity="center">
+        <TextView
+            android:id="@+id/activate_login_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Verify Account "
+            android:textColor="@color/textColor"
+            android:textSize="18sp"
+            android:onClick="activate" />
+</RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

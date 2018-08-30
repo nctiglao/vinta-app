@@ -1,0 +1,115 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+    tools:context="com.example.jim.superferry.activity.ActionMain">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relAppbar">
+            <include
+                layout="@layout/layout_toolbar"
+                android:id="@+id/appbar"/>
+
+        </RelativeLayout>
+
+
+    <RelativeLayout
+        android:background="@color/back_ground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"    
+        android:layout_below="@+id/relAppbar"
+        android:layout_above="@+id/relLayoutBot">
+
+    <TextView
+        android:textStyle="bold"
+        android:layout_marginLeft="110dp"
+        android:layout_marginStart="110dp"
+        android:id="@+id/account"
+        android:layout_width="wrap_content"
+        android:textColor="@color/textColor"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:text="Account"
+        android:textSize="40sp"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/user_profile"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:src="@drawable/fb"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF000000"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="140dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+    <TextView
+        android:id="@+id/AccFnametxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:textColor="@color/textColor"
+        android:textStyle="bold"
+        android:textSize="34sp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/na"/>
+
+    <TextView
+        android:id="@+id/AccLnametxtView"
+        android:layout_width="wrap_content"
+        android:textColor="@color/textColor"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/AccFnametxtView"
+        android:layout_toRightOf="@+id/AccFnametxtView"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="250dp"
+        android:textStyle="bold"
+        android:textSize="34sp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/na"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/click"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Total Points"
+        android:textColor="@color/textColor"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="350dp"
+        android:onClick="onClick"
+        android:textSize="24sp"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/relLayoutBot">
+
+            <android.support.design.widget.BottomNavigationView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/navView_bar"
+                android:background="@drawable/white_grey_border_bottom"
+                app:menu="@menu/bottom_navigation">
+
+            </android.support.design.widget.BottomNavigationView>
+        </RelativeLayout>
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>
